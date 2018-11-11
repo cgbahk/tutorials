@@ -13,7 +13,9 @@ RUN pip install -U pip setuptools && pip install \
     pyyaml \
     requests \
     scikit-image \
-    scipy
+    scipy \
+    lmdb \
+    imageio
 
 RUN sed -i -e 's/archive.ubuntu.com/kr.archive.ubuntu.com/g' /etc/apt/sources.list
 
